@@ -1,0 +1,89 @@
+2023-08-31 10:20:28|ERROR|App.Login.Reg|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar_thumb' in 'field list' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(398): NotORM_Result->query('INSERT  INTO cm...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(415): NotORM_Result->insert_multi(Array)
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/User.php(31): NotORM_Result->insert(Array)
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Login.php(221): App\Model\User->add(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Login.php(276): App\Domain\Login->reg(Array)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Login.php(394): App\Domain\Login->regbypass('17562721943', 'a123456', '0', '', '')
+#7 [internal function]: App\Api\Login->reg()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-08-31 10:25:05|ERROR|App.Login.Reg|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar_thumb' in 'field list' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(398): NotORM_Result->query('INSERT  INTO cm...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(415): NotORM_Result->insert_multi(Array)
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/User.php(31): NotORM_Result->insert(Array)
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Login.php(221): App\Model\User->add(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Login.php(276): App\Domain\Login->reg(Array)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Login.php(394): App\Domain\Login->regbypass('17562721943', 'a123456', '0', '', '')
+#7 [internal function]: App\Api\Login->reg()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-08-31 10:28:24|ERROR|App.Login.Reg|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'source' in 'field list' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(398): NotORM_Result->query('INSERT  INTO cm...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(415): NotORM_Result->insert_multi(Array)
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/User.php(31): NotORM_Result->insert(Array)
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Login.php(221): App\Model\User->add(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Login.php(276): App\Domain\Login->reg(Array)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Login.php(394): App\Domain\Login->regbypass('17562721943', 'a123456', '0', '', '')
+#7 [internal function]: App\Api\Login->reg()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-08-31 13:55:06|ERROR|App.User.GetBaseInfo|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'consumption' in 'field list' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT id,user_...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow('')
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/User.php(13): NotORM_Result->fetchOne()
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/User.php(85): App\Model\User->getInfo(Array, 'id,user_nicknam...')
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/User.php(177): App\Domain\User->getBaseInfo('2')
+#7 [internal function]: App\Api\User->getBaseInfo()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-08-31 13:55:23|ERROR|App.User.GetBaseInfo|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'consumption' in 'field list' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT id,user_...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow('')
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/User.php(13): NotORM_Result->fetchOne()
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/User.php(85): App\Model\User->getInfo(Array, 'id,user_nicknam...')
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/User.php(177): App\Domain\User->getBaseInfo('2')
+#7 [internal function]: App\Api\User->getBaseInfo()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-08-31 13:55:41|ERROR|App.User.GetBaseInfo|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'consumption' in 'field list' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT id,user_...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow('')
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/User.php(13): NotORM_Result->fetchOne()
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/User.php(85): App\Model\User->getInfo(Array, 'id,user_nicknam...')
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/User.php(177): App\Domain\User->getBaseInfo('2')
+#7 [internal function]: App\Api\User->getBaseInfo()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-08-31 14:23:06|ERROR|App.Agreement.Get|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 7)' at line 1 in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT id,post_...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Portalpost.php(13): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Agreement.php(36): App\Model\Portalpost->list(Array, 'id,post_title')
+#5 [internal function]: App\Api\Agreement->get()
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}

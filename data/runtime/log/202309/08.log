@@ -1,0 +1,64 @@
+---------------------------------------------------------------
+
+[2023-09-08T23:36:20+08:00] 205.210.31.137 GET kyhospital.sdwanyue.com/
+[运行时间：0.045774s] [吞吐率：21.85req/s] [内存消耗：790.98kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkphp/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf/src/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com',
+  'host' => 'kyhospital.sdwanyue.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001012s ] mysql:host=127.0.0.1;port=3306;dbname=kyhospital_sdwan;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook` [ RunTime:0.004105s ]
+[ sql ] [ SQL ] SELECT `hook` FROM `cmf_hook` WHERE  `type` = 1 OR (  `type` = 3  AND ( `app` = '' or `app` = 'cmf' ) ) [ RunTime:0.000861s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 56,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003353s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1  AND `hook` IN ('app_begin','module_init','action_begin','view_filter','app_end','log_write','response_end','admin_init','home_init','send_mobile_verification_code','body_start','before_head_end','footer_start','before_footer','before_footer_end','before_body_end','left_sidebar_start','before_left_sidebar_end','right_sidebar_start','before_right_sidebar_end','comment','guestbook','switch_theme','after_content','before_content','log_write_done','switch_admin_theme','captcha_image') ORDER BY `list_order` ASC [ RunTime:0.000941s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook_plugin',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.003501s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+[ warn ] SQL:SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = :ThinkBind_1_1657256382_  AND `hook` IN (:ThinkBind_2_1229363288_,:ThinkBind_3_1178284755_,:ThinkBind_4_1030736015_,:ThinkBind_5_2135171067_,:ThinkBind_6_1708689239_,:ThinkBind_7_1005990961_,:ThinkBind_8_376595797_,:ThinkBind_9_588683646_,:ThinkBind_10_1996673153_,:ThinkBind_11_50847088_,:ThinkBind_12_592680415_,:ThinkBind_13_1639329024_,:ThinkBind_14_1363296682_,:ThinkBind_15_1420389738_,:ThinkBind_16_832122727_,:ThinkBind_17_552494497_,:ThinkBind_18_4472411_,:ThinkBind_19_933074124_,:ThinkBind_20_1131701615_,:ThinkBind_21_1118657873_,:ThinkBind_22_197557969_,:ThinkBind_23_83922991_,:ThinkBind_24_1320915752_,:ThinkBind_25_1469540949_,:ThinkBind_26_96491053_,:ThinkBind_27_1152187437_,:ThinkBind_28_2128018085_,:ThinkBind_29_1081446803_) ORDER BY `list_order` ASC [Using where; Using filesort]

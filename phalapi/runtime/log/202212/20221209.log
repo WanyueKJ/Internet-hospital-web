@@ -1,0 +1,44 @@
+2022-12-09 09:03:07|ERROR|App.MerchantStoreLike.ListDelete|PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(599): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Model/MerchantStoreLike.php(122): NotORM_Result->delete()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/MerchantStoreLike.php(52): App\Model\MerchantStoreLike->inIdDeleteOne()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/MerchantStoreLike.php(51): App\Domain\MerchantStoreLike->deleteLike()
+#5 [internal function]: App\Api\MerchantStoreLike->listDelete()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#7 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2022-12-09 09:03:09|ERROR|App.MerchantStoreLike.ListDelete|PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(599): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Model/MerchantStoreLike.php(122): NotORM_Result->delete()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/MerchantStoreLike.php(52): App\Model\MerchantStoreLike->inIdDeleteOne()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/MerchantStoreLike.php(51): App\Domain\MerchantStoreLike->deleteLike()
+#5 [internal function]: App\Api\MerchantStoreLike->listDelete()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#7 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2022-12-09 09:03:11|ERROR|App.MerchantStoreLike.ListDelete|PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(599): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Model/MerchantStoreLike.php(122): NotORM_Result->delete()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/MerchantStoreLike.php(52): App\Model\MerchantStoreLike->inIdDeleteOne()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/MerchantStoreLike.php(51): App\Domain\MerchantStoreLike->deleteLike()
+#5 [internal function]: App\Api\MerchantStoreLike->listDelete()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#7 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2022-12-09 09:03:14|ERROR|App.MerchantStoreLike.ListDelete|PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(599): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Model/MerchantStoreLike.php(122): NotORM_Result->delete()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/MerchantStoreLike.php(52): App\Model\MerchantStoreLike->inIdDeleteOne()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/MerchantStoreLike.php(51): App\Domain\MerchantStoreLike->deleteLike()
+#5 [internal function]: App\Api\MerchantStoreLike->listDelete()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#7 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}

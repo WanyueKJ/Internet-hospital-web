@@ -1,0 +1,175 @@
+<include file="public@header"/>
+</head>
+<style>
+    .ba{
+        margin-bottom: 10px;
+        padding: 5px 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    #time{
+        position: relative;
+    }
+    .add,
+    .delete{
+        right: 200px;
+        position: absolute;
+        height: 30px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: green;
+        text-align: center;
+        line-height: 30px;
+    }
+    .delete{
+        background-color: red;
+        top: 50px;
+    }
+    .add a,.delete a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+</style>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('Doctor/index')}">医生列表</a></li>
+		<li class="active"><a href="{:url('Doctor/Add')}">{:lang('EDIT')}</a></li>
+    </ul>
+    <form class="form-horizontal js-ajax-form margin-top-20" action="{:url('Doctor/editpost',['id'=>$info['id']])}" method="post">
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>名称</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="name" value="{$info.name}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>职称</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="professional" value="{$info.professional}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>标识</label>
+            <div class="col-md-6 col-sm-10">
+                <select class="form-control"  name="signboard_id">
+                    <volist name="signboard" id="vo">
+                        <option  value="{$vo.id}"
+                        <if condition="$vo['id'] eq $info['signboard_id']">selected </if>  >{$vo.name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>头像</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="hidden" name="img" id="thumb" value="{$info.img}">
+                <a href="javascript:uploadOneImage('图片上传','#thumb');">
+                    <if empty($info.img)>
+                        <img src="__TMPL__/public/assets/images/default-thumbnail.png" id="thumb-preview"
+                        width="135" style="cursor: hand"/>
+                        <else/>
+                        <img src="{:cmf_get_image_preview_url($info.img)}" id="thumb-preview"
+                        width="135" style="cursor: hand"/>
+                    </if>
+                </a>
+                <input type="button" class="btn btn-sm"
+                       onclick="$('#thumb-preview').attr('src','__TMPL__/public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;"
+                       value="取消图片">	
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>介绍</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="content" value="{$info.content}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>擅长</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="message" value="{$info.message}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>费用</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="cost" value="{$info.cost}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>在线问诊费用</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="online_cost" value="{$info.online_cost}">
+            </div>
+        </div>
+        <div class="form-group" id="time">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>预约时间段</label>
+            <div class="col-md-6 col-sm-10" id="info">
+              <foreach name="info['info']" id="vo">
+                <div class="ba" index="{$key}">
+                   
+                    <div class="form-group">
+                        <label for="input-name" class="col-sm-3 control-label"><span class="form-required">*</span>开始时间</label>
+                        <div class="col-md-3 col-sm-6">
+                            <input type="time" name="info[{$key}][time_start]" class="form-control" value="{$vo.time_start}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-name" class="col-sm-3 control-label"><span class="form-required">*</span>结束时间</label>
+                        <div class="col-md-3 col-sm-6">
+                            <input type="time" name="info[{$key}][time_end]" class="form-control" value="{$vo.time_end}">
+                        </div>
+                    </div>
+                 </div>
+              </foreach>
+            </div>
+            <div class="add">
+                <a href="javascript:;">添加时间段</a>
+            </div>
+            <div class="delete" hidden>
+                <a href="javascript:;">删减</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary js-ajax-submit">添加</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+    let length = $('#info .ba').length;
+        if(length+1>1){
+            $('.delete').show()
+        }
+    $('.add').click(function(){
+        let length = $('#info .ba').length;
+        if(length+1>1){
+            $('.delete').show()
+        }
+        let el = $('#info .ba').eq(-1).clone(true);
+        let index = parseInt(el.attr('index')) + 1;
+        // let text_week = `info[${index}][text_week]`;
+        let time_start = `info[${index}][time_start]`;
+        let time_end = `info[${index}][time_end]`;
+        el.attr('index',index)
+        // el.find('select').attr('name',text_week);
+        // el.find('select').val(1);
+        el.find('input').eq(0).attr('name',time_start);
+        el.find('input').eq(0).val('')
+        el.find('input').eq(1).attr('name',time_end);
+        el.find('input').eq(1).val('')
+        $('#info').append(el)
+    })
+    $('.delete').click(function(){
+        let lenfth = $('#info .ba').length;
+        if(lenfth-1 <=1 ){
+            $('.delete').hide()
+        }
+        $('#info .ba').eq(-1).remove();
+    })
+</script>
+</body>
+</html>

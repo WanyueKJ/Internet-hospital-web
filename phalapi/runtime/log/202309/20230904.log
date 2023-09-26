@@ -1,0 +1,11 @@
+2023-09-04 09:28:18|ERROR|App.User.GetBaseInfo|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'B.uid' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT B.id,B.n...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Doctor.php(54): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/User.php(178): App\Model\Doctor->Collectlist(Array)
+#5 [internal function]: App\Api\User->getBaseInfo()
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}

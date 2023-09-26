@@ -1,0 +1,176 @@
+2023-02-09 17:32:39|ERROR|App.Login.LoginByCode|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'balance' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(194): App\Model\User->getInfo()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(366): App\Domain\Login->loginByCode()
+#7 [internal function]: App\Api\Login->loginByCode()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-09 17:35:36|ERROR|App.Login.LoginByCode|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'balance' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(194): App\Model\User->getInfo()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(366): App\Domain\Login->loginByCode()
+#7 [internal function]: App\Api\Login->loginByCode()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-09 17:45:55|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'balance' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#7 [internal function]: App\Api\Login->loginByPass()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-09 17:48:52|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'balance' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#7 [internal function]: App\Api\Login->loginByPass()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-09 17:51:38|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'balance' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#7 [internal function]: App\Api\Login->loginByPass()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-09 17:58:27|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[HY000]: General error: property queryString is read only in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:270
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(917): NotORM_Result->query()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(993): NotORM_Result->execute()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(981): NotORM_Result->fetchRow()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#6 [internal function]: App\Api\Login->loginByPass()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#8 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-02-09 17:58:44|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[HY000]: General error: property queryString is read only in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:270
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(917): NotORM_Result->query()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(993): NotORM_Result->execute()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(981): NotORM_Result->fetchRow()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#6 [internal function]: App\Api\Login->loginByPass()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#8 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-02-09 17:59:00|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[HY000]: General error: property queryString is read only in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:270
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(917): NotORM_Result->query()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(993): NotORM_Result->execute()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(981): NotORM_Result->fetchRow()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#6 [internal function]: App\Api\Login->loginByPass()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#8 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-02-09 17:59:03|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[HY000]: General error: property queryString is read only in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:270
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(917): NotORM_Result->query()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(993): NotORM_Result->execute()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(981): NotORM_Result->fetchRow()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#6 [internal function]: App\Api\Login->loginByPass()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#8 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-02-09 17:59:12|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[HY000]: General error: property queryString is read only in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:270
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(917): NotORM_Result->query()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(993): NotORM_Result->execute()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(981): NotORM_Result->fetchRow()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#6 [internal function]: App\Api\Login->loginByPass()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#8 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-02-09 17:59:13|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[HY000]: General error: property queryString is read only in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:270
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(917): NotORM_Result->query()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(993): NotORM_Result->execute()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(981): NotORM_Result->fetchRow()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#6 [internal function]: App\Api\Login->loginByPass()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#8 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-02-09 18:06:47|ERROR|App.Home.Home|PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taketest2_sdwany.cmf_merchant_search_keyword' doesn't exist in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/SearchKeyword.php(22): NotORM_Result->fetchAll()
+#4 [internal function]: App\Model\SearchKeyword->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/SearchKeyword.php(18): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Home.php(226): App\Domain\SearchKeyword->__call()
+#7 [internal function]: App\Api\Home->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-09 18:07:24|ERROR|App.Home.Home|PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taketest2_sdwany.cmf_merchant_search_keyword' doesn't exist in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/SearchKeyword.php(22): NotORM_Result->fetchAll()
+#4 [internal function]: App\Model\SearchKeyword->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/SearchKeyword.php(18): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Home.php(226): App\Domain\SearchKeyword->__call()
+#7 [internal function]: App\Api\Home->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-09 18:59:18|ERROR|App.Login.LoginByPass|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column '1birthday' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:273
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(273): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(916): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(992): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(980): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/User.php(22): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/Login.php(163): App\Model\User->getInfo()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/Login.php(331): App\Domain\Login->loginByPass()
+#7 [internal function]: App\Api\Login->loginByPass()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}

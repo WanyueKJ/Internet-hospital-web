@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="__TMPL__/chat/css/qq.css?{:time()}" />
+</head>
+
+<body>
+  <div class="qqBox">
+    <div class="BoxHead">
+      <div class="internetName">后台客服</div>
+    </div>
+    <div class="context">
+      <div class="conLeft">
+        <ul>
+          <foreach name="info" id="vo">
+            <li <if condition="$vo['id'] eq $id"> class="bg"</if> data-id='{$vo.usid}' >
+              <div class="liLeft"><img width="40px" src="{:cmf_get_image_preview_url($vo['avatar'])}" /></div>
+              <div class="liRight">
+                <span class="intername">{$vo.user_nickname} </span>
+                <span class="infor" oid="{$vo.id}">订单id:{$vo.id}</span>
+              </div>
+            </li>
+          </foreach>
+        </ul>
+      </div>
+      <div class="conRight">
+        <div class="Righthead">
+          <div class="headName"></div>
+
+        </div>
+        <div class="RightCont">
+          <div class="ChatRecord">查看更多消息</div>
+          <ul class="newsList">
+
+          </ul>
+        </div>
+        <div class="RightFoot">
+          <div class="inputBox">
+            <textarea id="dope" style="width: 99%;height: 75px; border: none;outline: none;" name="" rows=""
+              cols=""></textarea>
+            <button class="sendBtn">发送</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="__STATIC__/js/jquery.js"></script>
+<script>
+  let path = '__TMPL__/chat/';
+  var webscoket_ = "{$webscoket}";
+</script>
+<script src="__TMPL__/chat/js/chat.js?{:time()}"></script>

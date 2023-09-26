@@ -1,0 +1,381 @@
+2023-02-22 16:36:59|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(47): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-22 16:45:41|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(47): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-22 16:47:14|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(47): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-22 16:50:39|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(47): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-22 17:03:54|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:04:03|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:04:03|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:04:04|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:05:28|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:07:47|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:13:52|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:13:54|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:13:57|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:14:00|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:14:03|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:14:06|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:19:16|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:21:44|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:28:51|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:28:54|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:29:08|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:31:11|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:31:27|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:31:50|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:32:04|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:32:07|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:34:59|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:35:49|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-02-22 17:36:52|ERROR|App.FineFood.Home|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Model/MerchantType.php(67): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Domain/MerchantStore.php(878): App\Model\MerchantType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/app/Api/FineFood.php(316): App\Domain\MerchantStore->getSelectListByDistance()
+#7 [internal function]: App\Api\FineFood->home()
+#8 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}

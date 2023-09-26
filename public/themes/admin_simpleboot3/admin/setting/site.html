@@ -1,0 +1,97 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#A" data-toggle="tab">{:lang('WEB_SITE_INFOS')}</a></li>
+        <li><a href="#B" data-toggle="tab">{:lang('SEO_SETTING')}</a></li>
+    </ul>
+    <form class="form-horizontal js-ajax-form margin-top-20" role="form" action="{:url('setting/sitePost')}"
+          method="post">
+        <fieldset>
+            <div class="tabbable">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="A">
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>{:lang('WEBSITE_NAME')}</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[site_name]"
+                                       value="{$site_info.site_name|default=''}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>站点域名</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[site_host]"
+                                       value="{$site_info.site_host|default=''}">
+                                       <p class="help-block">格式： http(s)://xxxx.com(:端口号)</p>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="input-site_adminstyle" class="col-sm-2 control-label">{:lang('WEBSITE_ADMIN_THEME')}</label>
+                            <div class="col-md-6 col-sm-10">
+                                <php>
+                                    $site_admin_style=empty($admin_settings['admin_style'])?cmf_get_admin_style():$admin_settings['admin_style'];
+                                </php>
+                                <select class="form-control" name="admin_settings[admin_style]"
+                                        id="input-site_adminstyle">
+                                    <foreach name="admin_styles" item="vo">
+                                        <php>$admin_style_selected = $site_admin_style == $vo ? "selected" : "";</php>
+                                        <option value="{$vo}" {$admin_style_selected}>{$vo}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </div>
+                  
+                       
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary js-ajax-submit" data-refresh="1">
+                                    {:lang('SAVE')}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="B">
+                        <div class="form-group">
+                            <label for="input-site_seo_title" class="col-sm-2 control-label">{:lang('WEBSITE_SEO_TITLE')}</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site_seo_title"
+                                       name="options[site_seo_title]" value="{$site_info.site_seo_title|default=''}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-site_seo_keywords" class="col-sm-2 control-label">{:lang('WEBSITE_SEO_KEYWORDS')}</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site_seo_keywords"
+                                       name="options[site_seo_keywords]"
+                                       value="{$site_info.site_seo_keywords|default=''}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-site_seo_description" class="col-sm-2 control-label">{:lang('WEBSITE_SEO_DESCRIPTION')}</label>
+                            <div class="col-md-6 col-sm-10">
+                                <textarea class="form-control" id="input-site_seo_description"
+                                          name="options[site_seo_description]">{$site_info.site_seo_description|default=''}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary js-ajax-submit" data-refresh="0">
+                                    {:lang('SAVE')}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

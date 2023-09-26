@@ -1,0 +1,571 @@
+2023-02-25 10:40:46|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 11:06:34|ERROR|Rider.Location.Set|PDOException: SQLSTATE[HY000]: General error: 1205 Lock wait timeout exceeded; try restarting transaction in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(469): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/rider/Model/Location.php(39): NotORM_Result->update()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/rider/Domain/Location.php(73): Rider\Model\Location->up()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/rider/Api/Location.php(45): Rider\Domain\Location->setLocation()
+#5 [internal function]: Rider\Api\Location->set()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#7 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2023-02-25 11:06:39|ERROR|Rider.Location.Set|PDOException: SQLSTATE[HY000]: General error: 1205 Lock wait timeout exceeded; try restarting transaction in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(469): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/rider/Model/Location.php(39): NotORM_Result->update()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/rider/Domain/Location.php(73): Rider\Model\Location->up()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/rider/Api/Location.php(45): Rider\Domain\Location->setLocation()
+#5 [internal function]: Rider\Api\Location->set()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#7 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2023-02-25 11:06:44|ERROR|Rider.Location.Set|PDOException: SQLSTATE[HY000]: General error: 1205 Lock wait timeout exceeded; try restarting transaction in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/p2023-02-25 13:44:06|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:07|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:07|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:07|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:12|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:13|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:13|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:14|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:26|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:34|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:37|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:42|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:49|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:54|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:55|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:57|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:57|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:57|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:44:59|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 13:45:00|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:32:39|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:32:40|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:32:41|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:32:44|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:32:46|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:32:47|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:32:48|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:33:17|ERROR|Merchant.MerchantStoreType.Index|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(27): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantStoreType->selectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(55): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreType.php(34): Merchant\Domain\MerchantStoreType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreType.php(109): Merchant\Domain\MerchantStoreType->getList()
+#8 [internal function]: Merchant\Api\MerchantStoreType->index()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:34:41|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:34:57|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:38:10|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:39:37|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:40:05|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:45:39|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:45:41|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:45:49|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:46:39|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(258): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-25 14:49:55|ERROR|Merchant.MerchantStoreProduct.Read|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'th_name' in 'field list' in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(52): NotORM_Result->fetchOne()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantStoreType.php(101): Merchant\Model\MerchantStoreType->getOne()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantStoreProduct.php(256): Merchant\Model\MerchantStoreType->getTopName()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/MerchantStoreProduct.php(249): Merchant\Domain\MerchantStoreProduct->getProduct()
+#8 [internal function]: Merchant\Api\MerchantStoreProduct->read()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}

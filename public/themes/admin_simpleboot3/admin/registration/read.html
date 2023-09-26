@@ -1,0 +1,28 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <if condition="$type == 1">
+            <li><a href="{:url('Registration/index')}">返回</a></li>
+            <else/>
+            <li><a href="{:url('Inquiry/index')}">返回</a></li>
+        </if>
+		<li class="active"><a href="{:url('health/Add')}">详情</a></li>
+    </ul>
+    <form class="form-horizontal js-ajax-form margin-top-20" >
+
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>三方订单号</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="" disabled value="{$info.trade_no|default='---'}">
+            </div>
+        </div>
+     
+        {$div}
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+
+</body>
+</html>

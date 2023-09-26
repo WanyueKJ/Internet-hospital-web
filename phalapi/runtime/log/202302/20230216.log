@@ -1,0 +1,588 @@
+2023-02-16 10:47:33|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 10:47:41|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 10:50:26|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 10:51:06|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 10:51:15|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 10:55:12|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 10:55:14|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 10:59:40|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:01:59|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:02:03|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:02:07|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:02:09|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:02:16|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:02:25|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:02:51|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:04:56|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:05:09|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:06:02|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:07:13|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:11:18|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= '2') AND (pid = '1') ORDER BY li' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:31:57|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:34:45|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(89): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(29): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:35:18|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(89): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(28): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:35:29|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(90): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(28): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:36:13|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(90): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(28): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:36:19|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(90): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(28): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:41:57|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(90): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(28): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:45:14|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(89): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(27): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:45:28|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 1) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(89): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(27): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:50:09|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 11:50:19|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 13:35:24|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 13:35:47|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 13:35:51|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 13:36:03|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 13:36:36|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(87): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(27): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 13:36:37|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') IS NOT NULL AND id not IS NULL) AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(48): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(87): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(27): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 13:59:27|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '') AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(51): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 14:00:02|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ' ') AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(51): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 14:00:03|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ' ') AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(51): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 14:00:31|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ' ') AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(51): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}
+2023-02-16 14:00:32|ERROR|Merchant.Users.GetMerchantTypeList|PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ' ') AND (level <= 1) ORDER BY list_order ASC' at line 1 in /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Model/MerchantType.php(51): NotORM_Result->fetchAll()
+#4 [internal function]: Merchant\Model\MerchantType->notInIdselectList()
+#5 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(86): call_user_func_array()
+#6 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Domain/MerchantType.php(26): Merchant\Domain\MerchantType->__call()
+#7 /www/wwwroot/taketest2.sdwanyue.com/phalapi/src/merchant/Api/Users.php(147): Merchant\Domain\MerchantType->getSelectList()
+#8 [internal function]: Merchant\Api\Users->getMerchantTypeList()
+#9 /www/wwwroot/taketest2.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#10 /www/wwwroot/taketest2.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#11 {main}

@@ -1,0 +1,26 @@
+2023-09-16 11:16:27|ERROR|App.Upload.GetQiniuToken|InvalidArgumentException: Options access_key, secret_key and bucket required in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/qiniu/qiniu/lib/Qiniu/Client.php:59
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/qiniu/qiniu/lib/Qiniu/Qiniu.php(16): Qiniu\Client->__construct(Array)
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/qiniu/src/Lite.php(41): Qiniu\Qiniu::create(Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/config/di.php(76): PhalApi\Qiniu\Lite->__construct()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/DependenceInjection.php(201): {closure}()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/DependenceInjection.php(147): PhalApi\DependenceInjection->initService(Object(Closure))
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/DependenceInjection.php(174): PhalApi\DependenceInjection->get('qiniu', NULL)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Upload.php(42): PhalApi\DependenceInjection->__get('qiniu')
+#7 [internal function]: App\Api\Upload->getQiniuToken()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-09-16 11:17:56|ERROR|App.Upload.GetUpload|InvalidArgumentException: Options access_key, secret_key and bucket required in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/qiniu/qiniu/lib/Qiniu/Client.php:59
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/qiniu/qiniu/lib/Qiniu/Qiniu.php(16): Qiniu\Client->__construct(Array)
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/qiniu/src/Lite.php(41): Qiniu\Qiniu::create(Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/config/di.php(76): PhalApi\Qiniu\Lite->__construct()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/DependenceInjection.php(201): {closure}()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/DependenceInjection.php(147): PhalApi\DependenceInjection->initService(Object(Closure))
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/DependenceInjection.php(174): PhalApi\DependenceInjection->get('qiniu', NULL)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Upload.php(115): PhalApi\DependenceInjection->__get('qiniu')
+#7 [internal function]: App\Api\Upload->getUpload()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}

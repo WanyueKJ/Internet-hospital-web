@@ -1,0 +1,104 @@
+2022-12-10 10:58:04|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2022-12-10 10:58:50|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2022-12-10 11:01:24|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2022-12-10 11:05:03|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2022-12-10 11:13:03|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2022-12-10 13:50:24|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2022-12-10 13:52:01|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2022-12-10 13:52:44|ERROR|App.Orders.Reminder|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'store_id' in 'field list' in /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query()
+#2 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow()
+#4 /www/wwwroot/take.sdwanyue.com/phalapi/src/rider/Model/Orders.php(64): NotORM_Result->fetchOne()
+#5 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Domain/Orders.php(46): Rider\Model\Orders->getInfo()
+#6 /www/wwwroot/take.sdwanyue.com/phalapi/src/app/Api/Orders.php(114): App\Domain\Orders->reminderOrder()
+#7 [internal function]: App\Api\Orders->reminder()
+#8 /www/wwwroot/take.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func()
+#9 /www/wwwroot/take.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}

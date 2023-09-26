@@ -1,0 +1,26 @@
+2023-09-21 16:18:37  msg:订单-微信APP支付
+2023-09-21 16:18:37  msg:wx_data:[false]
+2023-09-21 16:20:10  msg:订单-微信APP支付
+2023-09-21 16:20:10  msg:wx_data:{"appid":"wx74f73771f5c66d60","bank_type":"OTHERS","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1596653071","nonce_str":"42f136c6d337f37d3afa34b2433240f0","openid":"oEAuQ6pi4TUSnNNSdGqxnCN5l9l4","out_trade_no":"202309211605564327","result_code":"SUCCESS","return_code":"SUCCESS","sign":"08012F2D9D294D99B8AAFBB3BAE9E529","time_end":"20230921160607","total_fee":"1","trade_type":"APP","transaction_id":"4200001901202309210155203833"}
+2023-09-21 16:20:10  msg:where:{"paytype":2,"orderno_pay":"202309211605564327"}
+2023-09-21 16:20:10  msg:成功
+2023-09-21 16:21:01  msg:订单-微信APP支付
+2023-09-21 16:21:01  msg:wx_data:{"appid":"wx74f73771f5c66d60","bank_type":"TACCB_DEBIT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1596653071","nonce_str":"14ee41c39dde110009d71fa50ed05f65","openid":"oEAuQ6pi2aZjVeXJgZg8WpkoQtxo","out_trade_no":"2023092116205196215","result_code":"SUCCESS","return_code":"SUCCESS","sign":"C1BFA07952B7F8C8E9995A0E24D6B450","time_end":"20230921162101","total_fee":"1","trade_type":"APP","transaction_id":"4200001980202309216478964784"}
+2023-09-21 16:21:01  msg:where:{"paytype":2,"orderno_pay":"2023092116205196215"}
+2023-09-21 16:21:01  msg:成功
+2023-09-21 16:23:32  msg:订单-微信APP支付
+2023-09-21 16:23:32  msg:wx_data:{"appid":"wx74f73771f5c66d60","bank_type":"TACCB_DEBIT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1596653071","nonce_str":"5e2264d637714231cd7a24de8aa79305","openid":"oEAuQ6pi2aZjVeXJgZg8WpkoQtxo","out_trade_no":"2023092116231729815","result_code":"SUCCESS","return_code":"SUCCESS","sign":"F2C2F718F5864663773C5FD3C7C4F894","time_end":"20230921162332","total_fee":"1","trade_type":"APP","transaction_id":"4200001901202309215515626519"}
+2023-09-21 16:23:32  msg:where:{"paytype":2,"orderno_pay":"2023092116231729815"}
+2023-09-21 16:23:32  msg:成功
+2023-09-21 16:38:17  msg:订单-微信APP支付
+2023-09-21 16:38:17  msg:wx_data:{"appid":"wx74f73771f5c66d60","bank_type":"OTHERS","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1596653071","nonce_str":"a89fb4fcd2dfebae1dcab3eae76927b6","openid":"oEAuQ6pi4TUSnNNSdGqxnCN5l9l4","out_trade_no":"202309211503544707","result_code":"SUCCESS","return_code":"SUCCESS","sign":"4E53B1F84A96BD21EB722238F8C26CA8","time_end":"20230921150414","total_fee":"1","trade_type":"APP","transaction_id":"4200001971202309218779180377"}
+2023-09-21 16:38:17  msg:where:{"paytype":2,"orderno_pay":"202309211503544707"}
+2023-09-21 16:38:17  msg:orderno:202309211503544707 订单信息不存在
+2023-09-21 16:53:35  msg:订单-微信APP支付
+2023-09-21 16:53:35  msg:wx_data:{"appid":"wx74f73771f5c66d60","bank_type":"TACCB_DEBIT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1596653071","nonce_str":"ae3b4ff57981f434a9bafa3651dfeed6","openid":"oEAuQ6pi2aZjVeXJgZg8WpkoQtxo","out_trade_no":"2023092116532458215","result_code":"SUCCESS","return_code":"SUCCESS","sign":"1F5EAC79F952A459B10F2F4E60BB7D92","time_end":"20230921165335","total_fee":"1","trade_type":"APP","transaction_id":"4200001914202309217442132723"}
+2023-09-21 16:53:35  msg:where:{"paytype":2,"orderno_pay":"2023092116532458215"}
+2023-09-21 16:53:35  msg:成功
+2023-09-21 16:59:56  msg:订单-微信APP支付
+2023-09-21 16:59:56  msg:wx_data:{"appid":"wx74f73771f5c66d60","bank_type":"TACCB_DEBIT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1596653071","nonce_str":"e2f937a08f464264a7fd6ee91522f2b3","openid":"oEAuQ6pi2aZjVeXJgZg8WpkoQtxo","out_trade_no":"2023092116594836115","result_code":"SUCCESS","return_code":"SUCCESS","sign":"E425A8629D4CA8B84E4CDD7A1635EA26","time_end":"20230921165955","total_fee":"1","trade_type":"APP","transaction_id":"4200001903202309219616047749"}
+2023-09-21 16:59:56  msg:where:{"paytype":2,"orderno_pay":"2023092116594836115"}
+2023-09-21 16:59:56  msg:成功

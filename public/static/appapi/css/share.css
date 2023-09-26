@@ -1,0 +1,120 @@
+html,body{
+    height:100%;
+    position:relative;
+}
+body{
+    min-height: 13.34rem;
+    padding-top: 1rem;
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/
+    -webkit-box-sizing: border-box; /*Safari3.2+*/
+    -o-box-sizing: border-box; /*Opera9.6*/
+    -ms-box-sizing: border-box; /*IE8*/
+    box-sizing: border-box;
+
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.share_top{
+    flex: 1;
+    width: 100%;
+}
+.share_logo{
+    margin: 0 0 0.36rem 0;
+    text-align: center;
+
+}
+.share_logo img{
+    width: 2rem;
+    height: 2rem;
+
+    -webkit-box-shadow: 0 0 5px #FFE5DE;
+    -moz-box-shadow: 0 0 5px #FFE5DE;
+    box-shadow: 0 0 5px #FFE5DE;
+
+    border-radius: 0.12rem;
+}
+
+.share_name{
+    margin-bottom: 0.96rem;
+    text-align: center;
+    color: #FF5124;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.share_user{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.44rem;
+    margin-bottom: 0.54rem;
+}
+.share_user img{
+    margin-right: 0.3rem;
+    width: 0.96rem;
+    height: 0.96rem;
+    border-radius: 50%;
+}
+
+.share_user_info{
+    color: #FFFFFF;
+}
+.share_user_info_name{
+    font-size: 0.36rem;
+}
+.share_user_info_des{
+    font-size: 0.2rem;
+}
+.share_code{
+    color: #FFFFFF;
+    font-size: 0.36rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.share_btn{
+
+}
+.share_btn a{
+    margin: 0 auto 0.4rem;
+    width: 2.8rem;
+    height: 0.72rem;
+
+    color: #FF5124;
+    font-size: 0.32rem;
+
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #FF5124;
+    border-radius: 0.08rem;
+
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/
+    -webkit-box-sizing: border-box; /*Safari3.2+*/
+    -o-box-sizing: border-box; /*Opera9.6*/
+    -ms-box-sizing: border-box; /*IE8*/
+    box-sizing: border-box;
+}
+.share_btn a img{
+    width: 0.5rem;
+}
+
+.share_bottom{
+    width: 100%;
+    height: 5.12rem;
+    background: url("../images/share/bj.png") no-repeat center;
+    background-size: 100% auto;
+
+}

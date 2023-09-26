@@ -1,0 +1,198 @@
+---------------------------------------------------------------
+
+[2023-09-10T22:56:15+08:00] 211.95.50.7 GET kyhospital.sdwanyue.com/
+[运行时间：0.024017s] [吞吐率：41.64req/s] [内存消耗：792.34kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkphp/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf/src/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'sec-gpc' => '1',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en;q=0.9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+  'host' => 'kyhospital.sdwanyue.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=127.0.0.1;port=3306;dbname=kyhospital_sdwan;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook` [ RunTime:0.004183s ]
+[ sql ] [ SQL ] SELECT `hook` FROM `cmf_hook` WHERE  `type` = 1 OR (  `type` = 3  AND ( `app` = '' or `app` = 'cmf' ) ) [ RunTime:0.000407s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 56,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.001729s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1  AND `hook` IN ('app_begin','module_init','action_begin','view_filter','app_end','log_write','response_end','admin_init','home_init','send_mobile_verification_code','body_start','before_head_end','footer_start','before_footer','before_footer_end','before_body_end','left_sidebar_start','before_left_sidebar_end','right_sidebar_start','before_right_sidebar_end','comment','guestbook','switch_theme','after_content','before_content','log_write_done','switch_admin_theme','captcha_image') ORDER BY `list_order` ASC [ RunTime:0.000379s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook_plugin',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.001819s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+[ warn ] SQL:SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = :ThinkBind_1_1718983605_  AND `hook` IN (:ThinkBind_2_1683786292_,:ThinkBind_3_689071841_,:ThinkBind_4_1926128809_,:ThinkBind_5_306828484_,:ThinkBind_6_2093391787_,:ThinkBind_7_1041784010_,:ThinkBind_8_1341474194_,:ThinkBind_9_411483421_,:ThinkBind_10_2042575970_,:ThinkBind_11_1285688814_,:ThinkBind_12_493030535_,:ThinkBind_13_185287388_,:ThinkBind_14_2054216713_,:ThinkBind_15_202715994_,:ThinkBind_16_323171106_,:ThinkBind_17_51840018_,:ThinkBind_18_257869719_,:ThinkBind_19_201253399_,:ThinkBind_20_181789990_,:ThinkBind_21_1167696073_,:ThinkBind_22_1362525728_,:ThinkBind_23_497581510_,:ThinkBind_24_1219520237_,:ThinkBind_25_1457439464_,:ThinkBind_26_1841074048_,:ThinkBind_27_1664775142_,:ThinkBind_28_602264608_,:ThinkBind_29_1395894551_) ORDER BY `list_order` ASC [Using where; Using filesort]
+---------------------------------------------------------------
+
+[2023-09-10T22:56:15+08:00] 211.95.50.8 GET kyhospital.sdwanyue.com/
+[运行时间：0.024924s] [吞吐率：40.12req/s] [内存消耗：791.52kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkphp/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf/src/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'accept-language' => 'en',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'host' => 'kyhospital.sdwanyue.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=kyhospital_sdwan;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook` [ RunTime:0.002023s ]
+[ sql ] [ SQL ] SELECT `hook` FROM `cmf_hook` WHERE  `type` = 1 OR (  `type` = 3  AND ( `app` = '' or `app` = 'cmf' ) ) [ RunTime:0.000289s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 56,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.002187s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1  AND `hook` IN ('app_begin','module_init','action_begin','view_filter','app_end','log_write','response_end','admin_init','home_init','send_mobile_verification_code','body_start','before_head_end','footer_start','before_footer','before_footer_end','before_body_end','left_sidebar_start','before_left_sidebar_end','right_sidebar_start','before_right_sidebar_end','comment','guestbook','switch_theme','after_content','before_content','log_write_done','switch_admin_theme','captcha_image') ORDER BY `list_order` ASC [ RunTime:0.000362s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook_plugin',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.002093s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+[ warn ] SQL:SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = :ThinkBind_1_2043962474_  AND `hook` IN (:ThinkBind_2_357921781_,:ThinkBind_3_1081592428_,:ThinkBind_4_976922179_,:ThinkBind_5_391633020_,:ThinkBind_6_2089764678_,:ThinkBind_7_440185017_,:ThinkBind_8_1086905195_,:ThinkBind_9_1124451020_,:ThinkBind_10_1891643010_,:ThinkBind_11_1063649273_,:ThinkBind_12_609791104_,:ThinkBind_13_458518189_,:ThinkBind_14_432710594_,:ThinkBind_15_447537468_,:ThinkBind_16_1179267583_,:ThinkBind_17_517905048_,:ThinkBind_18_615483743_,:ThinkBind_19_287220980_,:ThinkBind_20_1815531914_,:ThinkBind_21_941815337_,:ThinkBind_22_1904152205_,:ThinkBind_23_1565348120_,:ThinkBind_24_720823737_,:ThinkBind_25_1604665831_,:ThinkBind_26_772935875_,:ThinkBind_27_983550605_,:ThinkBind_28_528363109_,:ThinkBind_29_305264734_) ORDER BY `list_order` ASC [Using where; Using filesort]
+---------------------------------------------------------------
+
+[2023-09-10T22:56:19+08:00] 211.95.50.7 GET kyhospital.sdwanyue.com/favicon.ico
+[运行时间：0.016884s] [吞吐率：59.23req/s] [内存消耗：699.78kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkphp/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf/src/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/vendor/thinkcmf/cmf-app/src/user/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'sec-gpc' => '1',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en;q=0.9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+  'host' => 'kyhospital.sdwanyue.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=127.0.0.1;port=3306;dbname=kyhospital_sdwan;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook` [ RunTime:0.001981s ]
+[ sql ] [ SQL ] SELECT `hook` FROM `cmf_hook` WHERE  `type` = 1 OR (  `type` = 3  AND ( `app` = '' or `app` = 'cmf' ) ) [ RunTime:0.000231s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 56,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.001630s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1  AND `hook` IN ('app_begin','module_init','action_begin','view_filter','app_end','log_write','response_end','admin_init','home_init','send_mobile_verification_code','body_start','before_head_end','footer_start','before_footer','before_footer_end','before_body_end','left_sidebar_start','before_left_sidebar_end','right_sidebar_start','before_right_sidebar_end','comment','guestbook','switch_theme','after_content','before_content','log_write_done','switch_admin_theme','captcha_image') ORDER BY `list_order` ASC [ RunTime:0.000256s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cmf_hook_plugin',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ warn ] SQL:SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = :ThinkBind_1_67944130_  AND `hook` IN (:ThinkBind_2_129390171_,:ThinkBind_3_1436591538_,:ThinkBind_4_1551559933_,:ThinkBind_5_85824838_,:ThinkBind_6_1664213881_,:ThinkBind_7_1034443091_,:ThinkBind_8_1723110071_,:ThinkBind_9_1391981455_,:ThinkBind_10_1017267638_,:ThinkBind_11_1826248783_,:ThinkBind_12_1399002877_,:ThinkBind_13_611338807_,:ThinkBind_14_1615381525_,:ThinkBind_15_974010227_,:ThinkBind_16_1731476308_,:ThinkBind_17_1642692378_,:ThinkBind_18_1321406011_,:ThinkBind_19_1137376142_,:ThinkBind_20_1618144378_,:ThinkBind_21_1268164379_,:ThinkBind_22_575367903_,:ThinkBind_23_1147049795_,:ThinkBind_24_411152741_,:ThinkBind_25_1306921527_,:ThinkBind_26_1393900271_,:ThinkBind_27_65275076_,:ThinkBind_28_458891409_,:ThinkBind_29_810564123_) ORDER BY `list_order` ASC [Using where; Using filesort]

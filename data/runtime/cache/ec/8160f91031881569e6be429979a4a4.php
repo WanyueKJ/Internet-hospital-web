@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+/www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/data/runtime/cache/5d/488968ca96416815ab34c96e65cf3a.php,/www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/data/runtime/cache/51/1c40cf54ed02f4c715e5010c93eb90.php,/www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/data/runtime/cache/62/be86fb7597ba86471efd65ab403147.php,/www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/data/runtime/cache/7c/fd7023fe239ca7e38dac18fc978562.php,/www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/data/runtime/cache/dc/2d5460e4313a320b8775be8815268f.php

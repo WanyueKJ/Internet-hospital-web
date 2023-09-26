@@ -1,0 +1,90 @@
+<include file="public@header" />
+</head>
+
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li class="active"><a>订单列表</a></li>
+    </ul>
+    <form class="well form-inline margin-top-20" method="post" action="{:url('index')}">
+
+      关键字：
+      <input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}"
+        placeholder="医生">
+      订单状态：
+      <select name="status" id="" class="form-control" style="width: 200px;">
+        <option disabled selected>请选择</option>
+        <option value="1" <if condition="input('request.status') == 1">selected</if>>未支付</option>
+        <option value="2" <if condition="input('request.status') == 2">selected</if>>已支付</option>
+      </select>
+      <input type="submit" class="btn btn-primary" value="搜索" />
+      <a class="btn btn-danger" href="{:url('index')}">清空</a>
+    </form>
+    <form method="post" class="js-ajax-form">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>医生</th>
+            <th>用户</th>
+            <th>平台订单号</th>
+            <th>金额</th>
+            <th>支付状态</th>
+            <th>支付时间</th>
+            <th>日期</th>
+            <if condition="$type == 1">
+              <th>预约时间</th>
+            </if>
+            <th>{:lang('ACTIONS')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <foreach name="list" item="vo">
+            <tr>
+              <td>{$vo.id}</td>
+              <td>{$vo.doctor_name}</td>
+              <td>{$vo.user_nickname}</td>
+              <td>{$vo.orderno}</td>
+              <td>{$vo.money}￥</td>
+              <td>{$vo.status}</td>
+              <td>{$vo['paytime']}</td>
+              <td width="10%">{:date('Y-m-d',$vo['addtime'])}</td>
+              <if condition="$type == 1">
+
+                <td width="10%">{$vo['servicetime']}</td>
+              </if>
+              <td>
+                <a class="label label-success "
+                  href="{:url('registration/read',['id'=>$vo['id'],'type'=>$type])}">订单信息</a>
+                <if condition="$type == 1">
+                  <if condition="$vo['status_s'] eq 2">
+                    <if condition="$vo['complete'] == 0">
+                      <a class="btn btn-xs btn-warning js-ajax-dialog-btn"
+                        href="{:url('registration/complete',['id'=>$vo['id']])}" data-msg="确定核销吗？">核销</a>
+                      <else />
+                      <a class="label label-success" href="javascript:;">已核销</a>
+                    </if>
+                  </if>
+                </if>
+                <if condition="$type == 2">
+                  <if condition="$vo['status_s'] eq 2">
+                    <if condition="$vo['complete'] eq 0">
+                      <a class="label label-success " href="{:url('chat/index/index',['id'=>$vo['id']])}"
+                        target="_blank">问诊回复</a>
+                      <else />
+                      <a class="label label-success " href="javascript:;">已完成</a>
+                    </if>
+                  </if>
+                </if>
+              </td>
+            </tr>
+          </foreach>
+        </tbody>
+      </table>
+      <div class="pagination">{$page|default=''}</div>
+    </form>
+  </div>
+  <script src="__STATIC__/js/admin.js"></script>
+</body>
+
+</html>

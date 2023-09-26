@@ -1,0 +1,69 @@
+[2023-09-19 09:58:01 #13411.1]	WARNING	Socket::ssl_accept(): bad SSL client[80.66.88.14:63678], reason=252, error_string=unknown protocol
+[2023-09-19 14:48:12 #13411.4]	INFO	Server is shutdown now
+[2023-09-19 14:53:34 #6558.4]	INFO	Server is shutdown now
+[2023-09-19 15:21:18 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[89.248.165.7:54240], reason=252, error_string=unknown protocol
+[2023-09-19 16:22:19 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[89.248.165.124:34422], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:08 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[1.82.239.128:46116], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:21 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.155:40198], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:21 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[113.137.41.223:38754], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:26 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.154:49624], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:27 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.181:27426], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:28 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[211.95.50.7:6958], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:28 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.181:27748], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:29 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[113.141.179.177:47082], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:29 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.155:41978], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:31 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.136:24424], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:35 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[211.95.50.8:32174], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:37 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.128:30005], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:39 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[1.82.239.89:46100], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:39 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.40.79.184:55838], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:39 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.40.78.26:33724], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:40 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.180:13882], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:40 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.100.29:57481], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:41 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.129:30281], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:43 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[211.95.50.8:32719], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:43 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.136:32761], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:43 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.181:31464], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:45 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.137:60783], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:47 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.100.30:9588], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:47 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.176:34746], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:48 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.128:36531], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:49 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[117.33.177.36:46028], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:49 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[125.76.157.24:49590], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:50 #8536.2]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.136:38080], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:55 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.100.33:19520], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:55 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[211.95.50.7:9318], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:55 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[219.144.66.41:51460], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:56 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.136:41949], reason=252, error_string=unknown protocol
+[2023-09-19 19:24:56 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.128:43089], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:00 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.152:26660], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:03 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.137:8895], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:03 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.177:16172], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:07 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.177:17084], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:07 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.136:49647], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:08 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[111.7.96.155:50262], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:12 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.128:53214], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:12 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.129:51878], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:13 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[36.99.136.137:14906], reason=252, error_string=unknown protocol
+[2023-09-19 19:25:25 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[117.33.234.243:56466], reason=252, error_string=unknown protocol
+[2023-09-19 19:26:33 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[60.188.245.144:50798], reason=252, error_string=unknown protocol
+[2023-09-19 19:26:33 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[219.144.66.49:53944], reason=252, error_string=unknown protocol
+[2023-09-19 19:27:24 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[219.144.66.69:34664], reason=252, error_string=unknown protocol
+[2023-09-19 19:27:42 #8536.1]	WARNING	Socket::ssl_accept(): bad SSL client[117.33.172.106:33312], reason=252, error_string=unknown protocol
+[2023-09-20 08:46:12 #8536.4]	INFO	Server is shutdown now
+[2023-09-20 13:51:45 #21345.4]	INFO	Server is shutdown now
+[2023-09-20 14:13:20 #7426.4]	INFO	Server is shutdown now
+[2023-09-20 14:18:31 #16211.4]	INFO	Server is shutdown now
+[2023-09-20 14:21:57 #18239.4]	INFO	Server is shutdown now
+[2023-09-20 14:25:43 #19572.4]	INFO	Server is shutdown now
+[2023-09-20 14:27:02 #20931.4]	INFO	Server is shutdown now
+[2023-09-20 14:30:21 #21447.4]	INFO	Server is shutdown now
+[2023-09-20 14:31:39 #22737.4]	INFO	Server is shutdown now
+[2023-09-20 14:42:50 #23231.4]	INFO	Server is shutdown now
+[2023-09-20 21:02:21 #27582.1]	WARNING	Socket::ssl_accept(): bad SSL client[78.128.114.22:64249], reason=252, error_string=unknown protocol
+[2023-09-20 22:50:41 #27582.1]	WARNING	Socket::ssl_accept(): bad SSL client[89.248.165.243:37942], reason=252, error_string=unknown protocol
+[2023-09-21 04:09:42 #27582.1]	WARNING	Socket::ssl_accept(): bad SSL client[89.248.165.107:49310], reason=252, error_string=unknown protocol
+[2023-09-21 09:34:06 #27582.4]	INFO	Server is shutdown now
+[2023-09-21 16:01:10 #30606.9]	WARNING	Socket::ssl_accept(): bad SSL client[89.248.163.212:62824], reason=252, error_string=unknown protocol
+[2023-09-21 16:01:11 #30606.9]	WARNING	Socket::ssl_accept(): bad SSL client[89.248.163.212:60536], reason=252, error_string=unknown protocol
+[2023-09-21 16:37:23 #30606.9]	WARNING	Socket::ssl_accept(): bad SSL client[35.203.210.217:62546], reason=156, error_string=http request

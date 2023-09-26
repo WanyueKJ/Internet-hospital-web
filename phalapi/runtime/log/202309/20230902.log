@@ -1,0 +1,182 @@
+2023-09-02 08:50:49|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(599): NotORM_Result->query('DELETE FROM cmf...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(37): NotORM_Result->delete()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#5 [internal function]: App\Api\Health->userCollectH()
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2023-09-02 08:54:07|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cmf_health_collect' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(38): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 08:54:57|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cmf_health_collect' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(38): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 08:55:28|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cmf_health_collect' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(39): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 08:59:06|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cmf_health_collect' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(39): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:02:12|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cmf_health' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(36): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:04:59|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cmf_health_collect' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(41): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:05:08|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cmf_health_collect' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(41): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:05:50|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'A.type' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT B.id FRO...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(40): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:05:52|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'A.type' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT B.id FRO...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(40): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:06:13|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'B.uid' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT B.id FRO...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(40): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:06:22|ERROR|App.Health.UserCollectH|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'B.uid' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT B.id FRO...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(40): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(62): App\Model\Health->userCollect(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(143): App\Domain\Health->userCollectH('2')
+#6 [internal function]: App\Api\Health->userCollectH()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-02 09:52:42|ERROR|App.Health.Collect|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'health_id' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT * FROM c...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow('')
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(30): NotORM_Result->fetchOne()
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(24): App\Model\Health->one(Array)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(100): App\Domain\Health->Collect('7', '3')
+#7 [internal function]: App\Api\Health->Collect()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-09-02 09:58:37|ERROR|App.Health.Details|PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kyhospital_sdwan.cmf_A' doesn't exist in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT cmf_heal...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow('')
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Health.php(58): NotORM_Result->fetchOne()
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Health.php(64): App\Model\Health->oneCollect(Array)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Health.php(192): App\Domain\Health->details('7', '3')
+#7 [internal function]: App\Api\Health->details()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}
+2023-09-02 14:02:40|ERROR|App.Booked.InquiryDetails|PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'health_id' in 'where clause' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT * FROM c...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(991): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(979): NotORM_Result->fetchRow('')
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Doctor.php(28): NotORM_Result->fetchOne()
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Booked.php(120): App\Model\Doctor->oneCollect(Array)
+#6 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Booked.php(204): App\Domain\Booked->inquiryDetails('3', '3')
+#7 [internal function]: App\Api\Booked->inquiryDetails()
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#9 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#10 {main}

@@ -1,0 +1,65 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('VideoClass/index')}">视频课堂</a></li>
+		<li class="active"><a href="{:url('VideoClass/Add')}">{:lang('ADD')}</a></li>
+    </ul>
+    <form class="form-horizontal js-ajax-form margin-top-20" action="{:url('VideoClass/addPost')}" method="post">
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>标题</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>视频封面</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="hidden" name="image" id="thumb" value="">
+                                <a href="javascript:uploadOneImage('图片上传','#thumb');">
+                                    <img src="__TMPL__/public/assets/images/default-thumbnail.png" id="thumb-preview"
+                                         width="135" style="cursor: hand"/>
+                                </a>
+                                <input type="button" class="btn btn-sm"
+                                       onclick="$('#thumb-preview').attr('src','__TMPL__/public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;"
+                                       value="取消图片">	
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>视频</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" style="width:300px;" name="content" id="thumbnailurl"  value="">
+                <a href="javascript:uploadOne('视频上传','#thumbnailurl','video');" id='video_up'>
+                <input type="button" class="btn btn-sm btn-cancel-thumbnailurl" value="视频上传">
+                </a>		
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary js-ajax-submit">发布</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        editorcontent = new baidu.editor.ui.Editor();
+        editorcontent.render('content');
+        try {
+            editorcontent.sync();
+        } catch (err) {
+        }
+
+        $('#more-template-select').val('page');
+    });
+</script>
+</body>
+</html>

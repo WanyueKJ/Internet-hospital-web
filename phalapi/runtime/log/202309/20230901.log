@@ -1,0 +1,36 @@
+2023-09-01 14:22:15|ERROR|App.Booked.AppointmentList|PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(915): NotORM_Result->query('SELECT * FROM c...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(1000): NotORM_Result->execute()
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Doctor.php(8): NotORM_Result->fetchAll()
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Booked.php(8): App\Model\Doctor->list('id,img,name,con...')
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Booked.php(42): App\Domain\Booked->appointmentList()
+#6 [internal function]: App\Api\Booked->appointmentList()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-01 16:34:32|ERROR|App.Order.Create|PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(398): NotORM_Result->query('INSERT  INTO cm...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(415): NotORM_Result->insert_multi(Array)
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Orders.php(13): NotORM_Result->insert(Array)
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Orders.php(85): App\Model\Orders->add(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Order.php(51): App\Domain\Orders::create('2', 2, '', '2', '04:42~08:41', '', '1', '')
+#6 [internal function]: App\Api\Order->create()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2023-09-01 16:35:14|ERROR|App.Order.Create|PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php:272
+Stack trace:
+#0 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(272): PDOStatement->execute()
+#1 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(398): NotORM_Result->query('INSERT  INTO cm...', Array)
+#2 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/notorm/src/NotORM/Result.php(415): NotORM_Result->insert_multi(Array)
+#3 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Model/Orders.php(13): NotORM_Result->insert(Array)
+#4 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Domain/Orders.php(85): App\Model\Orders->add(Array)
+#5 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/src/app/Api/Order.php(51): App\Domain\Orders::create('2', 2, '1111', '2', '04:42~08:41', '', '1', '')
+#6 [internal function]: App\Api\Order->create()
+#7 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#8 /www/wwwroot/kyhospital.sdwanyue.com/kyhospital.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#9 {main}

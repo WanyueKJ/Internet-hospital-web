@@ -1,0 +1,159 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#A" data-toggle="tab">登录配置 </a></li>
+        <li><a href="#B" data-toggle="tab">支付配置  </a></li>
+        <li><a href="#C" data-toggle="tab">聊天配置  </a></li>
+    </ul>
+    <form class="form-horizontal js-ajax-form margin-top-20" role="form" action="{:url('setting/configpriPost')}"
+          method="post">
+        <fieldset>
+            <div class="tabbable">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="A">
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>验证码开关</label>
+                            <div class="col-md-6 col-sm-10">
+                                <select class="form-control" name="options[sendcode_switch]">
+                                    
+                                    <option value="0">关闭</option>
+                                    <option value="1" <eq name="config['sendcode_switch']" value="1">selected</eq>>开启</option>
+                                </select>
+                                <p class="help-block">关闭后不再发送真实验证码，采用默认验证码123456</p>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>腾讯云-API密钥-SecretId</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[tx_api_secretid]"
+                                       value="{$config['tx_api_secretid'] ?? ''}">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>腾讯云-API密钥-SecretKey</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[tx_api_secretkey]"
+                                       value="{$config['tx_api_secretkey'] ?? ''}">
+                            </div>
+                        </div>
+                       
+
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>腾讯云-短信应用SDKAppid</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[tx_sms_sdkappid]"
+                                       value="{$config['tx_sms_sdkappid'] ?? ''}">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>腾讯云-短信签名</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[tx_sms_sign]"
+                                       value="{$config['tx_sms_sign'] ?? ''}">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>腾讯云-短信模板ID</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[tx_sms_tempid]"
+                                       value="{$config['tx_sms_tempid'] ?? ''}">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary js-ajax-submit" data-refresh="1">
+                                    {:lang('SAVE')}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane" id="B">
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>微信开放平台移动应用AppID</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[wx_appid]"
+                                       value="{$config['wx_appid'] ?? ''}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>微信开放平台移动应用appsecret</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[wx_appsecret]"
+                                       value="{$config['wx_appsecret'] ?? ''}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>微信商户号mchid</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[wx_mchid]"
+                                       value="{$config['wx_mchid'] ?? ''}">
+                                       <p class="help-block">微信应用对应的微信商户 商户号mchid</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>微信密钥key</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[wx_key]"
+                                       value="{$config['wx_key'] ?? ''}">
+                                       <p class="help-block">微信应用对应的微信商户 密钥key</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary js-ajax-submit" data-refresh="0">
+                                    {:lang('SAVE')}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="tab-pane" id="C">
+                        <div class="form-group">
+                            <label for="input-site-name" class="col-sm-2 control-label"><span
+                                    class="form-required">*</span>聊天地址</label>
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" class="form-control" id="input-site-name" name="options[webscoket]"
+                                       value="{$config['webscoket'] ?? ''}">
+                                <p class="help-block">格式 wss://域名:端口号</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary js-ajax-submit" data-refresh="0">
+                                    {:lang('SAVE')}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

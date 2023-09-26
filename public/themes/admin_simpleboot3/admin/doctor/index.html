@@ -1,0 +1,86 @@
+<include file="public@header" />
+</head>
+
+<body>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li class="active"><a>医生列表</a></li>
+      <li><a href="{:url('Doctor/Add')}">{:lang('ADD')}</a></li>
+    </ul>
+    <form class="well form-inline margin-top-20" method="post" action="{:url('Doctor/index')}">
+
+      名称:
+      <input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}"
+        placeholder="名称">
+      <input type="submit" class="btn btn-primary" value="搜索" />
+      <a class="btn btn-danger" href="{:url('Doctor/index')}">清空</a>
+    </form>
+    <form method="post" class="js-ajax-form" action="{:url('Doctor/listOrder')}">
+      <div class="table-actions">
+        <button class="btn btn-primary btn-sm js-ajax-submit" type="submit">{:lang('SORT')}</button>
+      </div>
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th width="5%">{:lang('SORT')}</th>
+            <th width="5%">ID</th>
+            <th width="10%">头像</th>
+            <th width="10%">名称</th>
+            <th width="10%">职称</th>
+            <th>擅长</th>
+            <th>介绍</th>
+            <th>挂号费用</th>
+            <th width="20%">{:lang('ACTIONS')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <foreach name="list" item="vo">
+            <tr>
+              <td>
+                <input type="text" name="sort[{$vo.id}]" value="{$vo.sort}" class="input input-order">
+              </td>
+              <td>{$vo.id}</td>
+              <td> <img src="{:cmf_get_image_preview_url($vo.img)}" id="thumb-preview" width="40"
+                  style="cursor: hand" /></td>
+              <td>{$vo.name}</td>
+              <td>{$vo.professional}</td>
+              <td>{$vo.message}</td>
+              <td>{$vo.content}</td>
+              <td>{$vo.cost}￥</td>
+              <td>
+                <a class="btn btn-xs btn-primary" href="{:url('Doctor/edit',['id'=>$vo['id']])}">{:lang('EDIT')}</a>
+                <a class="btn btn-xs btn-danger js-ajax-delete" class=""
+                  href="{:url('Doctor/delete',['id'=>$vo['id']])}">{:lang('DELETE')}</a>
+                <if condition="$vo['status'] eq 1">
+                  <a class="btn btn-xs btn-warning js-ajax-dialog-btn"
+                    href="{:url('Doctor/status',['id'=>$vo['id'],'status'=>0])}" data-msg="确定关闭吗？">关闭问诊</a>
+                  <else />
+                  <a class="btn btn-success btn-xs js-ajax-dialog-btn"
+                    href="{:url('Doctor/status',['id'=>$vo['id'],'status'=>1])}" data-msg="确定开启吗？">开启问诊</a>
+                </if>
+              </td>
+            </tr>
+          </foreach>
+        </tbody>
+      </table>
+      <div class="table-actions">
+        <button class="btn btn-primary btn-sm js-ajax-submit" type="submit">{:lang('SORT')}</button>
+      </div>
+      <div class="pagination">{$page|default=''}</div>
+    </form>
+  </div>
+
+  <script src="__STATIC__/js/admin.js"></script>
+  <!-- <script>
+    $('body').append(`<div class="bottom">
+    <ul>
+      <li><a href="https://git.sdwanyue.com/" target="_blank">官网</a></li>
+      <li><a href="">社区</a></li>
+      <li><a href="">文档</a></li>
+    </ul>
+    <p>Copyright 2023 万岳开源互联网医院 v1.0.0</p>
+  </div>`)
+  </script> -->
+</body>
+
+</html>
